@@ -16,7 +16,8 @@ export const ViewsBlock = styled.div`
     border-radius: 6px;
     width: 240px;
     height: 112px;
-    background-color: #E2E5EE;
+    background-color: rgba(188, 154, 244, 0.3);
+   
 `
 
 export const ViewsTitle = styled.h1`
