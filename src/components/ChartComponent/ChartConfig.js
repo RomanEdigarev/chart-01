@@ -35,6 +35,7 @@ export const data = (value) => () => {
 
 export const options = {
     responsive: true,
+    maintainAspectRatio: false,
     legend: {display: false},
     tooltips: {enabled: false},
     scales: {
