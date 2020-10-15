@@ -1,8 +1,8 @@
 * {
-  max-width: 1440px;
-  height: 560px;
   box-sizing: border-box;
 }
+
+
 
 *,
 *::before,
@@ -55,4 +55,14 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.app__container {
+  //padding: 20px 40px;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1440px;
+  min-height: 435px;
+  //background-color: antiquewhite;
+  flex-wrap: wrap;
 }
