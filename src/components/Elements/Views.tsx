@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const ViewsContainer = styled.div`
 display:flex;
-justify-content: center;
-flex-direction:row;
+justify-content: flex-end;
+margin-bottom: 30px;
+
+ @media screen and (max-width:  960px) {
+    
+ }
 `
 
 export const ViewsBlock = styled.div`

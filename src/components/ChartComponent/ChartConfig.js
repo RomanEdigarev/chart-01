@@ -33,7 +33,7 @@ export const getOptions = (subs) => {
                 {
                     ticks: {
                         min: 0,
-                        max: subs,
+                        max: subs < 100 ? 100 : subs,
                         stepSize: Math.floor(subs / 5),
                         autoSkip: true,
                         maxTicksLimit: 10,

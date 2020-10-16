@@ -11,7 +11,7 @@ const Chart = ({subs}) => {
 
         const newDataSubs = [null, 0,]
         for(let i = 0; i < 6; i++ ) {
-            value +=  (subs / 5 + (subs / Math.random() * 0.0028)) / 1.6
+            value +=  (subs / 5 + (subs / Math.random() * 0.0020)) / 1.6
             newDataSubs.push(value)
         }
         setDataSubs(newDataSubs)
@@ -21,9 +21,16 @@ const Chart = ({subs}) => {
 
 
     return (
-        <div className={'chart__container'}>
-            <Line id={'canvas'} options={getOptions(subs)} data={getData(dataSubs)}/>
+        <div style={{
+            display : 'flex',
+            justifyContent: 'flex-end',
+
+        }}>
+            <div className={'chart__container'}>
+                <Line id={'canvas'} options={getOptions(subs)} data={getData(dataSubs)}/>
+            </div>
         </div>
+
     );
 };
 

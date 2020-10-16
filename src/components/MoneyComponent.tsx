@@ -32,7 +32,10 @@ const MoneyComponent : FC<PropsType> = ({setSubs, setViews}) => {
                </MoneyTitle>
                <MoneyInputContainer>
                    <MoneyImg src={rub}/>
-                   <MoneyInput onChange={(e: FormEvent<HTMLInputElement>) => calculation(e.currentTarget.value)} value={inputValue}/>
+                   <MoneyInput onChange={(e: FormEvent<HTMLInputElement>) => calculation(e.currentTarget.value)}
+                               value={inputValue}
+                               maxLength={7}
+                   />
                    <MoneyRub>руб.</MoneyRub>
                </MoneyInputContainer>
            </MoneyBlock>

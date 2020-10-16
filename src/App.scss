@@ -33,6 +33,12 @@ dd {
   margin: 0;
 }
 
+html {
+  max-width: 1440px;
+  max-height: 559px;
+  margin: 0 auto;
+}
+
 body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -59,10 +65,12 @@ select {
 
 .app__container {
   //padding: 20px 40px;
+  display: flex;
   margin: 0 auto;
-  justify-content: center;
-  max-width: 1440px;
-  min-height: 435px;
+  justify-content: start;
+  flex-direction: column;
+ width: 100%;
+  height: 559px;
   //background-color: antiquewhite;
   flex-wrap: wrap;
 }

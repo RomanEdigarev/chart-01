@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const MoneyContainer = styled.div`
   display: flex;
   flex-direction:column;
+  margin-bottom: 50px;
 `
 
 export const MoneyBlock = styled.div`

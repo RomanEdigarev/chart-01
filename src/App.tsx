@@ -10,21 +10,27 @@ import TitleComponent from "./components/TitleComponent";
 
 function App() {
 
+    console.log(window.innerWidth)
+
     const [views, setViews] = useState<number>(9000)
     const [subs, setSubs] = useState<number>(100)
 
 
     return (
-        <div className="app__container">
+        <div className="app">
             <TitleComponent/>
-            <Container>
+            {/*<Container>*/}
+            <div className="app__container">
                 <SubtitleComponent/>
-                <ViewsComponent subs={subs} views={views}/>
-            </Container>
-            <Container>
                 <MoneyComponent setSubs={setSubs} setViews={setViews} />
+                <ViewsComponent subs={subs} views={views}/>
+                {/*</Container>*/}
+                {/*<Container>*/}
                 <Chart subs={subs}/>
-            </Container>
+                {/*</Container>*/}
+            </div>
+
+
         </div>
     );
 }

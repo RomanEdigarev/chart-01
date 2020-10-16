@@ -7,13 +7,6 @@ type PropsType = {
 }
 const ViewsComponent : FC<PropsType> = ({views,subs}) => {
 
-
-
-
-
-
-
-
     return (
         <ViewsContainer>
             <ViewsBlock>

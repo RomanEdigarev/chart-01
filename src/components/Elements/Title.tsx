@@ -11,6 +11,7 @@ export const Title = styled.div`
     font-size: 46px;
     color: #212121;
     margin: 100px auto 60px;
+    
 `
 
 

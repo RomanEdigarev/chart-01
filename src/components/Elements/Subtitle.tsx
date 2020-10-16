@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Subtitle = styled.div`
     width: 590px;
-    height: 194px;
+    //height: 194px;
     display:flex;
     font-family: Montserrat;
     font-style: normal;
@@ -10,4 +10,12 @@ export const Subtitle = styled.div`
     font-size: 16px;
     line-height: 26px;
     color: #505361;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    
+    @media screen and (max-width:  960px) {
+      text-align: center;
+     
+      width: 100%;
+    }
 `
