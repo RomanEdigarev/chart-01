@@ -1,30 +1,17 @@
-export const data = (value) => () => {
-
-    let currentValue = value/1000
-    const data =[null, 0]
-
-    // const mathData = (value) => {
-    //     let val = 0;
-    //     for(let i = 1; i <= 6; i++) {
-    //         val += (value / 5)
-    //         data.push(val)
-    //     }
-    // }
-
-
-    // mathData(currentValue)
-
-
-
+const createGradient = () => {
     const ctx = document.getElementById('canvas').getContext('2d')
     const gradient = ctx.createLinearGradient(0, 0, 0, document.getElementById('canvas').width)
-    gradient.addColorStop(0.35, 'rgba(142, 86, 233, 0.31)')
-    gradient.addColorStop(0.95, 'rgba(142, 86, 233, 0)')
+    gradient.addColorStop(0.2, 'rgba(142, 86, 233, 0.31)')
+    gradient.addColorStop(0.45, 'rgba(142, 86, 233, 0)')
+    return gradient
+}
+
+export const getData = (data) => () => {
 
     return {
         labels: ['','1 день', "2 день", "3 день", "4 день", "5 день", "6 день", "7 день"],
         datasets: [{
-            backgroundColor: gradient,
+            backgroundColor: createGradient(),
             data: data,
             borderColor: '#7045C4',
             pointBackgroundColor: 'white',

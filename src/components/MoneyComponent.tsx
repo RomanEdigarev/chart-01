@@ -1,4 +1,4 @@
-import React, {FC, FormEvent} from "react";
+import React, {FC, FormEvent, useState} from "react";
 import {
     MoneyBlock, MoneyContainer,
     MoneyDescription,
@@ -16,11 +16,13 @@ type PropsType = {
 }
 const MoneyComponent : FC<PropsType> = ({setSubs, setViews}) => {
 
+    const [inputValue, setValue] = useState<string>('10000')
+
     const calculation = (value : string ) => {
+        setValue(value)
         setViews(Math.floor(+value/1.1))
         setSubs(Math.floor(+value/100))
     }
-
 
    return (
        <MoneyContainer>
@@ -30,7 +32,7 @@ const MoneyComponent : FC<PropsType> = ({setSubs, setViews}) => {
                </MoneyTitle>
                <MoneyInputContainer>
                    <MoneyImg src={rub}/>
-                   <MoneyInput onChange={(e: FormEvent<HTMLInputElement>) => calculation(e.currentTarget.value)}/>
+                   <MoneyInput onChange={(e: FormEvent<HTMLInputElement>) => calculation(e.currentTarget.value)} value={inputValue}/>
                    <MoneyRub>руб.</MoneyRub>
                </MoneyInputContainer>
            </MoneyBlock>
