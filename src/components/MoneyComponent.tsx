@@ -1,7 +1,7 @@
 import React, {FC, FormEvent, useState} from "react";
 import {
-    MoneyBlock, MoneyContainer,
-    MoneyDescription,
+    MoneyBlock,
+    MoneyContainer,
     MoneyImg,
     MoneyInput,
     MoneyInputContainer,
@@ -39,10 +39,6 @@ const MoneyComponent : FC<PropsType> = ({setSubs, setViews}) => {
                    <MoneyRub>руб.</MoneyRub>
                </MoneyInputContainer>
            </MoneyBlock>
-           <MoneyDescription>
-               Прогноз подписчиков зависит от Вашего контента. Сделайте его интересным и старайтесь не снижайть
-               планку
-           </MoneyDescription>
        </MoneyContainer>
    )
 }

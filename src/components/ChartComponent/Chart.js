@@ -21,11 +21,7 @@ const Chart = ({subs}) => {
 
 
     return (
-        <div style={{
-            display : 'flex',
-            justifyContent: 'flex-end',
-
-        }}>
+        <div className={'chart'}>
             <div className={'chart__container'}>
                 <Line id={'canvas'} options={getOptions(subs)} data={getData(dataSubs)}/>
             </div>

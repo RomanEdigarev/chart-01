@@ -15,7 +15,7 @@ export const Subtitle = styled.div`
     
     @media screen and (max-width:  960px) {
       text-align: center;
-     
+     margin-bottom: 30px;
       width: 100%;
     }
 `
